@@ -1,0 +1,57 @@
+---
+{ "title": "My Contact Page",
+"myList": [ "one", "two", "three"],
+"address": { "streetAddress": "904 Filly Circle",
+"addressLocality": "New Hope",
+"addressRegion": "PA", "postalCode": "18938"},
+"@context": "http://schema.org", "@type": "Organization"}
+---
+{{> top-nav }}
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <h1>{{ title }}</h1>
+      <small>{{"@context"}}/{{"@type"}}</small>
+    </div>
+    <div class='large-12 cel'>
+      <ul>
+        {{#each myList}}
+        <li>{{this}}</li>{{/each}}
+      </ul>
+    </div>
+    <div class='small-12 cell'>
+      <ul>
+        <li> {{ address.streetAddress }} </li>
+        <li> {{ address.addressLocality }} </li>
+        <li> {{ address.postalCode }} </li>
+      </ul>
+    </div>
+  </div>
+  <div class='small-3 '>
+    <div class="card" style="width: 300px;">
+      <div class="card-divider">
+        {{guggersgutters.name}}
+      </div>
+      <img src="{{guggersgutters.image.url}}">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <p>{{ guggersgutters.alternateName}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='small-3 '>
+    <div class="card" style="width: 300px;">
+      <div class="card-divider">
+        {{impactsignsusa.name}}
+      </div>
+      <img src="{{impactsignsusa.image.url}}">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <p>{{ impactsignsusa.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

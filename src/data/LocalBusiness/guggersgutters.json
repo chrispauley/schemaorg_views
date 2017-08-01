@@ -1,0 +1,45 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Quality Seamless Gutters",
+  "alternateName": "Guggers Gutters",
+  "description": "Quality Seamless Gutters has been serving Bucks County for since 1997. We make your rain gutters on site and tailored to fit your home. We also install gutter guards to reduce the maintenance of your gutters. Our goal is to help protect your home and to increase the curb appeal of your home with quality seamless gutters and gutter guards. Since our start, we have been committed to installing superior products in Bucks County, PA.",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressRegion": "PA",
+      "addressLocality": "Bucks County"
+    }
+  },
+  "foundingDate": "1997",
+  "url": "http://guggersgutters.com",
+  "image": {
+    "@type": "ImageObject",
+    "caption": "Quality Seamless Gutters",
+    "url": "http://guggersgutters.com/img/quality_seamless_gutters_box_truck.jpg"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1-215-862-5111",
+    "contactType": "sales",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "16:00",
+      "closes": "18:00"
+    }
+  }],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressRegion": "PA",
+    "addressLocality": "New Hope",
+    "postalCode": "18938",
+    "streetAddress": "6838 Chapel Hill Road"
+  },
+  "logo": "http://guggersgutters.com/img/qsl_banner_logo.png",
+  "naics": "238170",
+  "sameAs": ["https://www.facebook.com/Quality-Seamless-Gutters-473221542750945/"]
+}

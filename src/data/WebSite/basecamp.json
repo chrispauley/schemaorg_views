@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://basecamp.com",
+  "name": "Basecamp",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://basecamp.com/help/3/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
