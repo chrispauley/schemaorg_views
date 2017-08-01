@@ -14492,6 +14492,7 @@ window.$ = _jquery2.default;
 
 
 (0, _jquery2.default)(document).foundation();
+// console.log("loaded scripts");
 
 /***/ }),
 /* 21 */

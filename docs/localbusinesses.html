@@ -9,11 +9,29 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-
+    
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <ul class='menu vertical'>
+        <li><a href='index.html' class="">Home</a></li>
+        <li><a href='recipes.html' class="">Recipes</a></li>
+        <li><a href='localbusinesses.html' class="">LocalBusiness</a></li>
+        <li><a href='contact.html' class="">Contact</a></li>
+        <li><a href='about.html' class="">About</a></li>
+        <li><a href='http://facebook.com/cdpauley'><i.fi-social-facebook></i></a></li>
+        <li><a href='http://twitter.com/pauleycd'><i.fi-social-twitter></i></a></li>
+        <li><a href='http://linkedin.com/christopherpauley'><i.fi-social-linkedin></i></a></li>
+        <li><a href='http://github.com/chrispauley'><i.fi-social-github></i></a></li>
+      </ul>
+    </div>
     <div class='top-bar'>
       <div class='top-bar-title'>
         <span data-responsive-toggle='responsive-menu' data-hide-for='medium'>
-          <button class='menu-icon dark' type='button' data-toggle></button>
+          <button class='menu-icon dark' type='button' data-toggle="offCanvasLeft"></button>
+          <!-- <button type="button" class="button" data-toggle="offCanvasLeft">Open Menu</button> -->
         </span>
         <strong>My SchemaOrg Instance Viewer</strong>
       </div>

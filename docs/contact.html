@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/vendor.js?hash=eceb3a0cb6a9a3f95854c532a6ebbd81"></script>
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/foundation.js?hash=b679e2177e3de7e04f4c100d03af1ad3"></script>
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/docs.js?hash=9adc0ae1222c4567178bb0cc7f704ec5"></script>
   </head>
   <body>
-    <div class='off-canvas position-left'>
+    
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
       <ul class='menu vertical'>
         <li><a href='index.html' class="">Home</a></li>
         <li><a href='recipes.html' class="">Recipes</a></li>
@@ -22,10 +30,16 @@
         <li><a href='http://github.com/chrispauley'><i.fi-social-github></i></a></li>
       </ul>
     </div>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-content" data-off-canvas-content>
+      </div> <!-- off-canvas-content -->
+    </div> <!-- off-canvas-wrapper -->
+
     <div class='top-bar'>
       <div class='top-bar-title'>
         <span data-responsive-toggle='responsive-menu' data-hide-for='medium'>
-          <button class='menu-icon dark' type='button' data-toggle></button>
+          <button class='menu-icon dark' type='button' data-toggle="offCanvasLeft"></button>
+          <!-- <button type="button" class="button" data-toggle="offCanvasLeft">Open Menu</button> -->
         </span>
         <strong>My SchemaOrg Instance Viewer</strong>
       </div>
